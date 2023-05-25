@@ -23,24 +23,27 @@ Large: 1.8
 
 --- 02 COLORS
 
-- Primary: #e67e22
+-- Primary: #166899
 - Tints:
-#fdf2e9
-#fae5d3
-#eb984e
+#34779F
+#5692B6
 
 - Shades: 
-#cf711f
-#45260a
+#0b5079
+#053E60
 
-- Accents:
-- Greys
+-- Second:
+-- Third: 
+-- Fourth:
 
+-- Greys:
 #888
 #767676 (lightest grey allowed on #fff)
-#6f6f6f (lightest grey allowed on #fdf2e9)
+#5D5D5D (lightest grey allowed on #FFD970)
 #555
 #333
+
+
 
 --- 05 SHADOWS
 
@@ -76,10 +79,11 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
+    font-family: 'Assistant', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #222;
+    background-color: rgba(255, 217, 112, 0.2);
 
   /* Only works if there is nothing absolutely positioned in relation to body */
   overflow-x: hidden;
@@ -271,7 +275,7 @@ body {
   outline: none;
   /* outline: 4px dotted #e67e22; */
   /* outline-offset: 8px; */
-  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+  box-shadow: 0 0 0 0.8rem rgba(40, 40, 40, 0.5);
 }
 
 /* HELPER/SETTINGS CLASSES */
