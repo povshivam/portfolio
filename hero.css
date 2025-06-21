@@ -9,36 +9,62 @@
     font-style: normal;
 }
 
-/*********************************/ 
-/* LANDING */ 
-/*********************************/ 
-#landing {
-    height: 100vh;
+
+/*********************************/
+/* HERO PAGE */
+/*********************************/
+#hero {
+    display: grid;
+    grid-template-columns: 2fr 0fr;
     background-color: rgb(34, 31, 30);
+    height: 100vh;
+    transition: 300ms;
+    justify-items: center;
+    align-items: center;
 }
 
-#landing h1 {
+#hero:has(#landing>button:active, #landing>button:visited) {
+    grid-template-columns: 2fr 1fr;
+}
+
+/*********************************/
+/* LANDING */
+/*********************************/
+#landing {}
+
+#landing button {
     font-size: 6rem;
     font-family: "Staatliches", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #b05200;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    align-content: end;
+    justify-content: center;
+    background: none;
+    border: none;
 }
 
-/*********************************/ 
-/* NAVIGATION */ 
-/*********************************/ 
-#navigation {
-    justify-self: right;
+#landing h1::selection {
+    background-color: #b05200;
+    color: white;
 }
+
+/*********************************/
+/* NAVIGATION */
+/*********************************/
+#navigation {
+    display: none;
+}
+
+#navigation:has(#landing:active, #landing:visited) {
+    display: block;
+}
+
+/*********************************/
+/* EXTRA */
+/*********************************/
 
 /* Changes the default cursor to a character, swap out the existing dot with your own, now with color */
-
 body {
     cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><text y="18" font-size="25" fill="white">●</text></svg>') 12 12, auto;
 }
@@ -48,5 +74,3 @@ body {
 a {
     cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><text y="18" font-size="25" fill="white">●</text></svg>') 12 12, pointer;
 }
-
-

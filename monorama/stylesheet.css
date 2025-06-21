@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Monorama';
+    src: url('Monorama-Bold.eot');
+    src: local('Monorama Bold'), local('Monorama-Bold'),
+        url('Monorama-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Monorama-Bold.woff2') format('woff2'),
+        url('Monorama-Bold.woff') format('woff'),
+        url('Monorama-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monorama';
+    src: url('Monorama-SemiBold.eot');
+    src: local('Monorama SemiBold'), local('Monorama-SemiBold'),
+        url('Monorama-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Monorama-SemiBold.woff2') format('woff2'),
+        url('Monorama-SemiBold.woff') format('woff'),
+        url('Monorama-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monorama';
+    src: url('Monorama-Medium.eot');
+    src: local('Monorama Medium'), local('Monorama-Medium'),
+        url('Monorama-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Monorama-Medium.woff2') format('woff2'),
+        url('Monorama-Medium.woff') format('woff'),
+        url('Monorama-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monorama';
+    src: url('Monorama-Regular.eot');
+    src: local('Monorama Regular'), local('Monorama-Regular'),
+        url('Monorama-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Monorama-Regular.woff2') format('woff2'),
+        url('Monorama-Regular.woff') format('woff'),
+        url('Monorama-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
