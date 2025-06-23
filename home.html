@@ -12,15 +12,101 @@
         <h2>I'M</h2>
         <img src="img/my-image.png" alt="profile picture">
         <h1>SHIVAM PATEL</h1>
+        <div class="typewriter" id="typewriter">
+            <span id="text"></span><span class="cursor" id="cursor">_</span>
+        </div>
     </div>
-    <div class="navigation monorama">
+    <div class="navigation monorama hover-menu">
+        <h2 class="xenon">/* navigation */</h2>
         <ul>
-            <li><a href="#about">.home</a></li>
-            <li><a href="#projects">.projects</a></li>
-            <li><a href="#experience">.lab</a></li>
-            <li><a href="#certifications">.blog</a></li>
-            <li><a href="#achievements">.about</a></li>
+            <li class="hover-item"><a href="#about">.home</a></li>
+            <li class="hover-item"><a href="#projects">.projects</a></li>
+            <li class="hover-item"><a href="#experience">.lab</a></li>
+            <li class="hover-item"><a href="#certifications">.blog</a></li>
+            <li class="hover-item"><a href="#achievements">.about</a></li>
         </ul>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Select all elements you want this effect on
+            const visualizerTargets = document.querySelectorAll('.hover-item');
+
+            visualizerTargets.forEach(target => {
+                // Get the computed padding values from CSS
+                const style = getComputedStyle(target);
+                const paddingTop = style.paddingTop;
+                const paddingBottom = style.paddingBottom;
+                const paddingLeft = style.paddingLeft;
+                const paddingRight = style.paddingRight;
+
+                // Create the HTML structure for the visualizer
+                const visualizerHTML = `
+                    <div class="padding-visualizer">
+                        <div class="padding-area top" style="height: ${paddingTop};">
+                            <span class="value">${paddingTop}</span>
+                        </div>
+                        <div class="padding-area bottom" style="height: ${paddingBottom};">
+                            <span class="value">${paddingBottom}</span>
+                        </div>
+                        <div class="padding-area left" style="width: ${paddingLeft};">
+                            <span class="value">${paddingLeft}</span>
+                        </div>
+                        <div class="padding-area right" style="width: ${paddingRight};">
+                            <span class="value">${paddingRight}</span>
+                        </div>
+                    </div>
+                `;
+
+                // Add the visualizer HTML to each target element
+                target.innerHTML += visualizerHTML;
+            });
+        });
+
+
+        const words = [
+            "high schooler",
+            "web developer",
+            "graphic designer",
+            "computer programmer",
+            "robotics engineer"
+        ];
+
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const textEl = document.getElementById("text");
+
+        function typeEffect() {
+            const currentWord = words[wordIndex];
+            const displayedText = currentWord.substring(0, charIndex);
+            textEl.textContent = displayedText;
+
+            if (!isDeleting) {
+                if (charIndex < currentWord.length) {
+                    charIndex++;
+                    setTimeout(typeEffect, 100);
+                } else {
+                    setTimeout(() => {
+                        isDeleting = true;
+                        typeEffect();
+                    }, 3000);
+                }
+            } else {
+                if (charIndex > 0) {
+                    charIndex--;
+                    setTimeout(typeEffect, 50);
+                } else {
+                    isDeleting = false;
+                    wordIndex = (wordIndex + 1) % words.length;
+                    setTimeout(typeEffect, 300);
+                }
+            }
+        }
+
+        typeEffect();
+
+
+    </script>
 </body>
 </html>
