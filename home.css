@@ -114,19 +114,32 @@
 
 
 
-
-
-
-
-
 body {
-    background-color: #111111;
-    /*background-color: rgb(34, 31, 30);*/
-    color: #ffffff;
+    background-color: rgb(34, 31, 30);
+    color: #e6e6e6;
     display: flex;
-    height: 100vh;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -149,54 +162,51 @@ body {
     margin: 0;
     font-size: 5rem;
     font-weight: 700;
-    padding: 5% 0 0 30px;
+    padding: 5% 0 0 50px;
+    grid-row: 2 / 3;
     align-self: end;
 }
 
 .content img {
-    border-radius: 10%;
-    width: 400px;
-    height: 400px;
+    width: 390px;
+    height: 340px;
     object-fit: cover;
     opacity: 0.90;
     align-self: end;
-    padding-bottom: 1%;
+    grid-row: 2 / 3;
+    padding-bottom: 15px;
+
 }
 
 .content h1 {
     color: #b05200;
-    font-size: 9rem;
+    font-size: 9.5rem;
     font-weight: 900;
     grid-column: 1 / 4;
-    align-self: start;
-    padding: 0 0 0 25px;
-}
-
-.content div {
-    grid-column: 3 / 4;
     grid-row: 3 / 4;
-    padding: 0 150px 50px 0;
-    justify-content: end;
-    align-items: end;
-    display: flex;
+    align-self: start;
+    padding: 0 0 0 35px;
 }
-
-
-
-
 
 .typewriter {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    justify-content: start;
+    align-items: end;
+    display: flex;
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
+    padding-bottom: 12px;
+    color: #e6e6e6cc;
 }
 
 .cursor {
     display: inline-block;
     width: 10px;
-    color: #fff;
+    color: #e6e6e6;
     animation: blink 1s infinite;
 }
 
@@ -226,10 +236,19 @@ body {
 
 
 
+
+
+
+
+
+
+
+
 .navigation {
-    width: 25%;
+    width: 500px;
+    height: 100vh;
     background-color: #8a3c0f;
-    padding: 75px 75px;
+    padding: 0;
     box-sizing: border-box;
     order: 1;
     font-weight: 500;
@@ -240,53 +259,68 @@ body {
 .navigation h2 {
     font-size: 1.25rem;
     font-weight: 500;
-    color: #222222;
-    padding-top: 50px;
+    color: #e6e6e9be;
+    padding: 75px 0 15px 50px
 }
 
 .navigation ul {
     list-style: none;
-    padding: 0;
-}
-
-.navigation ul li:first-child {
-    margin-top: 0;
 }
 
 .navigation ul li {
-    margin: 35px 0;
+    margin: 0;
+    padding: 35px 50px;
 }
 
 .navigation ul li a {
     text-decoration: none;
     color: #e6e6e6;
-    /*color: #fe5344;*/
-    font-size: 24px;
+    font-size: 1.25rem;
 }
 
-.navigation ul li a:hover {
-    color: #ffffff;
+.navigation ul li a span {
+    color: #e6e6e971;
+    font-weight: 500;
 }
+
+.navigation ul li a:hover,
+.navigation ul li a span:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* --- Navigation Styling --- */
-.hover-menu {
-    display: flex;
-    gap: 1rem;
-    border: 1px solid #1a3a5a;
-    /* A subtle border for the container */
-    padding: 2rem;
-}
-
 .hover-item {
     position: relative;
     /* Crucial for positioning the overlays */
-    padding: 20px 40px;
     /* The padding we want to visualize */
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 }
 
 /* --- The Visualizer Elements (Initially Hidden) --- */
@@ -299,20 +333,21 @@ body {
     pointer-events: none;
     /* Allows clicks to go through to the element below */
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.6s ease;
     z-index: 10;
 }
 
 .hover-item:hover .padding-visualizer {
     opacity: 1;
-    /* Show visualizer on hover */
 }
 
 .padding-visualizer .padding-area {
     position: absolute;
     background-color: rgba(126, 198, 153, 0.25);
-    /* Greenish overlay for padding */
+    box-sizing: border-box;
     border: 1px dashed #7ec699;
+    background-color: #e6e6e621;
+    border: 1px dashed #e6e6e659;
 }
 
 /* The four padding areas */
@@ -344,11 +379,14 @@ body {
 .padding-visualizer .value {
     position: absolute;
     color: #7ec699;
+    color: rgba(126, 198, 153, 0.75);
     font-size: 12px;
-    background-color: #011627;
+    background-color: #011627c5;
     /* Match body background */
     padding: 2px 4px;
     border-radius: 3px;
+    background-color: rgba(34, 31, 30);
+    color: #e6e6e6cc;
 }
 
 /* Positioning the text labels */
