@@ -46,16 +46,7 @@
     align-items: center;
 }
 
-#hero:has(#landing>button:active, #landing>button:visited) {
-    grid-template-columns: 2fr 1fr;
-}
-
-/*********************************/
-/* LANDING */
-/*********************************/
-#landing {}
-
-#landing button {
+#landing a {
     font-size: 6rem;
     font-family: "Monorama";
     font-weight: 700;
@@ -65,22 +56,7 @@
     justify-content: center;
     background: none;
     border: none;
-}
-
-#landing h1::selection {
-    background-color: #b05200;
-    color: white;
-}
-
-/*********************************/
-/* NAVIGATION */
-/*********************************/
-#navigation {
-    display: none;
-}
-
-#navigation:has(#landing:active, #landing:visited) {
-    display: block;
+    text-decoration: none;
 }
 
 /*********************************/
@@ -94,6 +70,7 @@ body {
 
 /* Changes the cursor to a different character when hovering a link, swap out the existing dot with your own, now with color */
 
-a {
+a:hover,
+a:focus {
     cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><text y="18" font-size="25" fill="white">●</text></svg>') 12 12, pointer;
 }

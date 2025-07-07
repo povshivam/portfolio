@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Monorama';
+    font-weight: 300;
+    src: url(/monorama/Monorama-Regular.woff);
+}
+
+@font-face {
+    font-family: 'Monorama';
+    font-weight: 500;
+    src: url(/monorama/Monorama-Medium.woff2);
+}
+
+@font-face {
+    font-family: 'Monorama';
+    font-weight: 700;
+    src: url(/monorama/Monorama-SemiBold.woff2);
+}
+
+@font-face {
+    font-family: 'Monorama';
+    font-weight: 900;
+    src: url(/monorama/Monorama-Bold.woff2);
+}
+
+.monorama {
+    font-family: 'Monorama';
+}
+
+@font-face {
+    font-family: 'MonaspaceKrypton';
+    font-weight: 900;
+    src: url(webfonts/MonaspaceKrypton-ExtraBold.woff2);
+}
+
+@font-face {
+    font-family: 'MonaspaceKrypton';
+    font-weight: 700;
+    src: url(webfonts/MonaspaceKrypton-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'MonaspaceKrypton';
+    font-weight: 500;
+    src: url(webfonts/MonaspaceKrypton-Medium.woff2);
+}
+
+@font-face {
+    font-family: 'MonaspaceKrypton';
+    font-weight: 300;
+    src: url(webfonts/MonaspaceKrypton-Light.woff2);
+}
+
+@font-face {
+    font-family: 'MonaspaceKrypton';
+    font-weight: 200;
+    src: url(webfonts/MonaspaceKrypton-Thin.woff2);
+}
+
+@font-face {
+    font-family: 'MonaspaceKrypton';
+    font-weight: 100;
+    src: url(webfonts/MonaspaceKrypton-ExtraLight.woff2);
+}
+
+.krypton {
+    font-family: 'MonaspaceKrypton', monospace;
+}
+
+@font-face {
+    font-family: 'MonaspaceXenon';
+    font-weight: 900;
+    src: url(webfonts/MonaspaceXenon-ExtraBold.woff2);
+}
+
+@font-face {
+    font-family: 'MonaspaceXenon';
+    font-weight: 700;
+    src: url(webfonts/MonaspaceXenon-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'MonaspaceXenon';
+    font-weight: 500;
+    src: url(webfonts/MonaspaceXenon-Medium.woff2);
+}
+
+@font-face {
+    font-family: 'MonaspaceXenon';
+    font-weight: 300;
+    src: url(webfonts/MonaspaceXenon-Light.woff2);
+}
+
+@font-face {
+    font-family: 'MonaspaceXenon';
+    font-weight: 200;
+    src: url(webfonts/MonaspaceXenon-Thin.woff2);
+}
+
+@font-face {
+    font-family: 'MonaspaceXenon';
+    font-weight: 100;
+    src: url(webfonts/MonaspaceXenon-ExtraLight.woff2);
+}
+
+.xenon {
+    font-family: 'MonaspaceXenon', monospace;
+}
