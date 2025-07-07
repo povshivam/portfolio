@@ -15,13 +15,29 @@
 
         <h2>I'M</h2>
 
-        <img src="img/headshot.png" alt="profile picture">
+        <img src="img/headshot.png" alt="profile picture" id="myImage">
 
         <h1>SHIVAM PATEL</h1>
+
+        <p class="neon" id="myParagraph">
+            &lt;p&gt;
+            <br>&thinsp;&thinsp;&thinsp;&thinsp;Hey there! I'm a high school senior who enjoys working at the 
+            <br>&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;intersection of technology and design, whether that's through 
+            <br>&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;photography, video editing, graphic design, or website 
+            <br>&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;development. I also spend time coding and creating visuals to 
+            <br>&thinsp;&thinsp;&thinsp;&thinsp;bring ideas to life. This site is a collection of the things
+            <br>&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;that I’ve been working on and learning along the way.
+            <br>
+            &emsp;&lt;/p&gt;
+        </p>
 
         <div class="typewriter" id="typewriter">
             <span id="text"></span><span class="cursor" id="cursor">_</span>
         </div>
+
+        <h3 class="SNIPPET--language SNIPPET--language-html">HTML</h3>
+
+        <h3 class="SNIPPET--language SNIPPET--language-html">HTML</h3>        
 
     </div>
 
@@ -31,17 +47,20 @@
         <h2 class="xenon">/* --- navigation --- */</h2>
 
         <ul>
-
             <li class="hover-item"><a href="">.home <span>{}</span></a></li>
             <li class="hover-item"><a href="projects.html">.projects <span>{}</span></a></li>
             <li class="hover-item"><a href="">.lab <span>{}</span></a></li>
             <li class="hover-item"><a href="">.blog <span>{}</span></a></li>
             <li class="hover-item"><a href="">.about <span>{}</span></a></li>
-
         </ul>
+
+        <h3 class="SNIPPET--language SNIPPET--language-css monorama">CSS</h3>
+        <h3 class="SNIPPET--language SNIPPET--language-css monorama">CSS</h3>
+        <h3 class="SNIPPET--language SNIPPET--language-css monorama">CSS</h3>
+        <h3 class="SNIPPET--language SNIPPET--language-css monorama">CSS</h3>
     </div>
 
-
+    <h3 class="SNIPPET--language SNIPPET--language-html-last">HTML</h3>
 
 
 
@@ -49,6 +68,20 @@
 
 
     <script>
+        const paragraph = document.getElementById("myParagraph");
+        const image = document.getElementById("myImage");
+
+        paragraph.addEventListener("mouseover", () => {
+            paragraph.style.opacity = "1";
+            image.style.opacity = "0.5";
+        });
+
+        paragraph.addEventListener("mouseout", () => {
+            paragraph.style.opacity = "0.5";
+            image.style.opacity = "1";
+        });
+
+
         document.addEventListener('DOMContentLoaded', () => {
             // Select all elements you want this effect on
             const visualizerTargets = document.querySelectorAll('.hover-item');
@@ -86,11 +119,11 @@
 
 
         const words = [
-            "high schooler",
-            "web developer",
-            "graphic designer",
-            "computer programmer",
-            "robotics engineer"
+            "<!--high schooler-->",
+            "<!--web developer-->",
+            "<!--graphic designer-->",
+            "<!--computer programmer-->",
+            "<!--robotics engineer-->"
         ];
 
         let wordIndex = 0;

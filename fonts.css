@@ -110,3 +110,43 @@
 .xenon {
     font-family: 'MonaspaceXenon', monospace;
 }
+
+@font-face {
+    font-family: 'MonaspaceNeon';
+    font-weight: 900;
+    src: url(webfonts/MonaspaceNeon-ExtraBold.woff2);
+}
+
+@font-face {
+    font-family: 'MonaspaceNeon';
+    font-weight: 700;
+    src: url(webfonts/MonaspaceNeon-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'MonaspaceNeon';
+    font-weight: 500;
+    src: url(webfonts/MonaspaceNeon-Medium.woff2);
+}
+
+@font-face {
+    font-family: 'MonaspaceNeon';
+    font-weight: 300;
+    src: url(webfonts/MonaspaceNeon-Light.woff2);
+}
+
+@font-face {
+    font-family: 'MonaspaceNeon';
+    font-weight: 200;
+    src: url(webfonts/MonaspaceNeon-Thin.woff2);
+}
+
+@font-face {
+    font-family: 'MonaspaceNeon';
+    font-weight: 100;
+    src: url(webfonts/MonaspaceNeon-ExtraLight.woff2);
+}
+
+.neon {
+    font-family: 'MonaspaceNeon', monospace;
+}

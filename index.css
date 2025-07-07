@@ -3,39 +3,6 @@
     padding: 0;
 }
 
-.staatliches-regular {
-    font-family: "Staatliches", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Monorama';
-    font-weight: 300;
-    src: url(/monorama/Monorama-Regular.woff);
-}
-
-@font-face {
-    font-family: 'Monorama';
-    font-weight: 500;
-    src: url(/monorama/Monorama-Medium.woff2);
-}
-
-@font-face {
-    font-family: 'Monorama';
-    font-weight: 700;
-    src: url(/monorama/Monorama-SemiBold.woff2);
-}
-
-@font-face {
-    font-family: 'Monorama';
-    font-weight: 900;
-    src: url(/monorama/Monorama-Bold.woff2);
-}
-
-/*********************************/
-/* HERO PAGE */
-/*********************************/
 #hero {
     display: grid;
     grid-template-columns: 2fr 0fr;
@@ -59,16 +26,11 @@
     text-decoration: none;
 }
 
-/*********************************/
-/* EXTRA */
-/*********************************/
 
-/* Changes the default cursor to a character, swap out the existing dot with your own, now with color */
+/* Cursor */
 body {
     cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><text y="18" font-size="25" fill="white">●</text></svg>') 12 12, auto;
 }
-
-/* Changes the cursor to a different character when hovering a link, swap out the existing dot with your own, now with color */
 
 a:hover,
 a:focus {

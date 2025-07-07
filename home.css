@@ -3,7 +3,6 @@
     padding: 0;
 }
 
-
 body {
     background-color: rgb(34, 31, 30);
     color: #e6e6e6;
@@ -33,6 +32,33 @@ html {
 
 
 
+.SNIPPET--language {
+    font-family: "Monorama", monospace;
+    font-weight: 500;
+    font-size: 2.5rem;
+    opacity: 0.25;
+}
+
+.SNIPPET--language-html-last {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -45,58 +71,99 @@ html {
     width: 75%;
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 3fr 4fr;
-    grid-template-rows: 7fr 1fr 1fr;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
 }
 
 .content h2 {
     margin: 0;
     font-size: 5rem;
     font-weight: 700;
-    padding: 5% 0 0 50px;
-    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
     align-self: end;
+    margin-left: 60px;
+    border: 5px solid #e6e6e63a;
+    border-bottom: none;
+    padding: 10px 15px 0 15px;
+    box-shadow: 0 0 10px #e6e6e650;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #e6e6e6cc;
 }
 
 .content img {
     width: 507px;
     height: 442px;
     object-fit: cover;
-    opacity: 0.90;
     align-self: end;
-    grid-row: 1 / 2;
-    padding-bottom: 15px;
+    grid-column: 2 / 5;
+    grid-row: 5 / 6;
+    padding-left: 50px;
+    padding-top: 75px;
+    z-index: 1;
+    transition: opacity 0.5s ease;
 }
 
 .content h1 {
     color: #b05200;
-    font-size: 9.5rem;
+    font-size: 9rem;
     font-weight: 900;
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-    align-self: start;
-    padding: 0 0 0 35px;
+    grid-column: 1 / 8;
+    grid-row: 6 / 7;
+    justify-self: start;
+    margin-left: 60px;
+    border: #b05200 outset 8px;
+    padding: 8px 8px 0 8px;
+    box-shadow: 0 0 10px rgba(176, 82, 0, 0.5);
+    border-radius: 8px;
+}
+
+.content p {
+    font-size: 1rem;
+    font-weight: 500;
+
+    position: absolute;
+    top: 25%;
+    left: 29%;
+    margin-right: 600px;
+    opacity: 0.5;
+
+    color: #e6e6e6a1;
+    align-self: center;
+    padding: 0 50px;
+    transition: opacity 0.5s ease;
+}
+
+.SNIPPET--language-html {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.SNIPPET--language-html:last-of-type {
+    grid-column: 1 / 2;
+    grid-row: 10 / 11;
 }
 
 .typewriter {
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
+    grid-column: 4 / 11;
+    grid-row: 8 / 10;
     justify-content: start;
     align-items: start;
     display: flex;
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 2.5rem;
+    font-weight: 400;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     padding-bottom: 12px;
-    color: #e6e6e6cc;
+    color: #e6e6e6a1;
 }
 
 .cursor {
     display: inline-block;
     width: 10px;
-    color: #e6e6e6;
+    color: #e6e6e6a1;
     animation: blink 1s infinite;
 }
 
@@ -136,30 +203,59 @@ html {
 
 .navigation {
     width: 500px;
-    height: 100vh;
+    height: 600px;
     background-color: #8a3c0f;
     padding: 0;
     box-sizing: border-box;
     order: 1;
     font-weight: 500;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.SNIPPET--language-css {
+    color: #e6e6e6;
+}
+
+.SNIPPET--language-css:nth-of-type(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.SNIPPET--language-css:nth-of-type(2) {
+    grid-column: 1 / 2;
+    grid-row: 10 / 11;
+}
+
+.SNIPPET--language-css:nth-of-type(3) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    justify-self: end;
+}
+
+.SNIPPET--language-css:nth-of-type(4) {
+    grid-column: 3 / 4;
+    grid-row: 10 / 11;
+    justify-self: end;
 }
 
 .navigation h2 {
     font-size: 1.25rem;
     font-weight: 500;
-    color: #e6e6e9be;
-    padding: 75px 0 15px 50px
+    color: #e6e6e980;
+    padding: 25px 0 15px 50px;
+    grid-column: 1 / 4;
 }
 
 .navigation ul {
     list-style: none;
+    grid-column: 1 / 4;
 }
 
 .navigation ul li {
     margin: 0;
-    padding: 35px 50px;
+    padding: 30px 50px;
 }
 
 .navigation ul li a {
@@ -172,12 +268,6 @@ html {
     color: #e6e6e971;
     font-weight: 500;
 }
-
-.navigation ul li a:hover,
-.navigation ul li a span:hover {
-    color: #fff;
-}
-
 
 
 
