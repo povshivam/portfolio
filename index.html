@@ -13,10 +13,32 @@
 </head>
 
 <body>
-  <section id="hero">
-    <div id="landing">
+  <section class="hero">
+    <div class="landing">
       <a href="home.html"><strong>&lt;</strong>HELLO, WORLD!<strong>&gt;</strong></a>
     </div>
   </section>
+
+
+  <script>
+    function pageTransition(nextPage) {
+    
+    document.body.style.opacity = 0;
+    document.body.style.transition = "opacity 1s";
+    
+    setTimeout(() => {
+            window.location.href = nextPage;
+        },  800);
+    }
+
+    const link = document.querySelector('a');
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        pageTransition(link.href);
+    });
+
+
+
+  </script>
 </body>
 </html>

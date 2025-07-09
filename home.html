@@ -35,9 +35,9 @@
             <span id="text"></span><span class="cursor" id="cursor">_</span>
         </div>
 
-        <h3 class="SNIPPET--language SNIPPET--language-html">HTML</h3>
+        <h3 class="SNIPPET--language SNIPPET--language-html top-left">HTML</h3>
 
-        <h3 class="SNIPPET--language SNIPPET--language-html">HTML</h3>        
+        <h3 class="SNIPPET--language SNIPPET--language-html bottom-left">HTML</h3>        
 
     </div>
 
@@ -47,27 +47,34 @@
         <h2 class="xenon">/* --- navigation --- */</h2>
 
         <ul>
-            <li class="hover-item"><a href="">.home <span>{}</span></a></li>
+            <li class="hover-item"><a href="#">.home <span>{}</span></a></li>
             <li class="hover-item"><a href="projects.html">.projects <span>{}</span></a></li>
-            <li class="hover-item"><a href="">.lab <span>{}</span></a></li>
-            <li class="hover-item"><a href="">.blog <span>{}</span></a></li>
-            <li class="hover-item"><a href="">.about <span>{}</span></a></li>
+            <li class="hover-item"><a href="#">.lab <span>{}</span></a></li>
+            <li class="hover-item"><a href="#">.blog <span>{}</span></a></li>
+            <li class="hover-item"><a href="#">.about <span>{}</span></a></li>
         </ul>
 
-        <h3 class="SNIPPET--language SNIPPET--language-css monorama">CSS</h3>
-        <h3 class="SNIPPET--language SNIPPET--language-css monorama">CSS</h3>
-        <h3 class="SNIPPET--language SNIPPET--language-css monorama">CSS</h3>
-        <h3 class="SNIPPET--language SNIPPET--language-css monorama">CSS</h3>
+        <h3 class="SNIPPET--language SNIPPET--language-css top-left monorama">CSS</h3>
+        <h3 class="SNIPPET--language SNIPPET--language-css bottom-left monorama">CSS</h3>
+        <h3 class="SNIPPET--language SNIPPET--language-css top-right monorama">CSS</h3>
+        <h3 class="SNIPPET--language SNIPPET--language-css bottom-right monorama">CSS</h3>
     </div>
 
-    <h3 class="SNIPPET--language SNIPPET--language-html-last">HTML</h3>
-
-
-
+    <!-- <h3 class="SNIPPET--language SNIPPET--language-html bottom-right">HTML</h3>
+    <h3 class="SNIPPET--language SNIPPET--language-html top-right">HTML</h3> -->
 
 
 
     <script>
+
+
+
+
+
+
+        //
+        // HOVER EFFECT FOR PARAGRAPH AND IMAGE
+        // 
         const paragraph = document.getElementById("myParagraph");
         const image = document.getElementById("myImage");
 
@@ -82,6 +89,14 @@
         });
 
 
+
+
+
+
+
+        //
+        // PAADING VISUALIZER
+        //
         document.addEventListener('DOMContentLoaded', () => {
             // Select all elements you want this effect on
             const visualizerTargets = document.querySelectorAll('.hover-item');
@@ -118,6 +133,14 @@
         });
 
 
+
+
+
+
+
+        //
+        // TYPERWRITER EFFECT
+        //
         const words = [
             "<!--high schooler-->",
             "<!--web developer-->",
@@ -139,7 +162,7 @@
             if (!isDeleting) {
                 if (charIndex < currentWord.length) {
                     charIndex++;
-                    setTimeout(typeEffect, 100);
+                    setTimeout(typeEffect, 125);
                 } else {
                     setTimeout(() => {
                         isDeleting = true;
@@ -149,17 +172,61 @@
             } else {
                 if (charIndex > 0) {
                     charIndex--;
-                    setTimeout(typeEffect, 50);
+                    setTimeout(typeEffect, 75);
                 } else {
                     isDeleting = false;
                     wordIndex = (wordIndex + 1) % words.length;
-                    setTimeout(typeEffect, 300);
+                    setTimeout(typeEffect, 500);
                 }
             }
         }
 
         typeEffect();
 
+
+
+        const elementsHTML = document.getElementsByClassName("SNIPPET--language-html");
+        const contentNotHTML = document.querySelectorAll('.content *:not(.SNIPPET--language-html)');
+        const navigationNotHTML = document.querySelectorAll('.navigation:not(.SNIPPET--language-html)');
+        console.log(contentNotHTML, navigationNotHTML);
+
+        // Function to set opacity on all snippet blocks
+        function setSnippetOpacity(value, elements) {
+            for (let element of elements) {
+                element.style.opacity = value;
+            }
+        }
+
+        for (let corner of elementsHTML) {
+            corner.addEventListener("mouseenter", () => {
+                setSnippetOpacity("0.6", elementsHTML);
+                setSnippetOpacity("0.25", navigationNotHTML);
+            });
+
+            corner.addEventListener("mouseleave", () => {
+                setSnippetOpacity("0.25", elementsHTML);
+                setSnippetOpacity("1", navigationNotHTML);
+            });
+        }
+
+
+
+
+        const elementsCSS = document.getElementsByClassName("SNIPPET--language-css");
+        const contentNotCSS = document.querySelectorAll('.content:not(.SNIPPET--language-css)');
+        const navigationNotCSS = document.querySelectorAll('.navigation *:not(.SNIPPET--language-css)');
+
+        for (let corner of elementsCSS) {
+            corner.addEventListener("mouseenter", () => {
+                setSnippetOpacity("0.6", elementsCSS);
+                setSnippetOpacity("0.25", contentNotCSS);
+            });
+
+            corner.addEventListener("mouseleave", () => {
+                setSnippetOpacity("0.25", elementsCSS);
+                setSnippetOpacity("1", contentNotCSS);
+            });
+        }
 
     </script>
 </body>

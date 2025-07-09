@@ -13,8 +13,10 @@
 
     <div class="content xenon">
         <h2><a href="projects/school/grade8/science/chapter9/Loading.html">Periodic Table</a></h2>
-        <h2><a href="projects/omnifood/index.html">Omnifood</a></h2>
+        <h2><a href="https://omnifood-shivamp.netlify.app">Omnifood v2</a></h2>
+
         <h2><a href="projects/covid-19/Home/index.html">COVID-19</a></h2>
+        <h2><a href="projects/omnifood/index.html">Omnifood v1</a></h2>
     </div>
 
 
@@ -23,14 +25,17 @@
         <h2 class="xenon">/* --- navigation --- */</h2>
 
         <ul>
-
             <li class="hover-item"><a href="home.html">.home <span>{}</span></a></li>
-            <li class="hover-item"><a href="">.projects <span>{}</span></a></li>
-            <li class="hover-item"><a href="">.lab <span>{}</span></a></li>
-            <li class="hover-item"><a href="">.blog <span>{}</span></a></li>
-            <li class="hover-item"><a href="">.about <span>{}</span></a></li>
-
+            <li class="hover-item"><a href="#">.projects <span>{}</span></a></li>
+            <li class="hover-item"><a href="#">.lab <span>{}</span></a></li>
+            <li class="hover-item"><a href="#">.blog <span>{}</span></a></li>
+            <li class="hover-item"><a href="#">.about <span>{}</span></a></li>
         </ul>
+
+        <h3 class="SNIPPET--language SNIPPET--language-css top-left monorama">CSS</h3>
+        <h3 class="SNIPPET--language SNIPPET--language-css bottom-left monorama">CSS</h3>
+        <h3 class="SNIPPET--language SNIPPET--language-css top-right monorama">CSS</h3>
+        <h3 class="SNIPPET--language SNIPPET--language-css bottom-right monorama">CSS</h3>
     </div>
 
 
@@ -89,51 +94,6 @@
                 target.innerHTML += visualizerHTML;
             });
         });
-
-
-        const words = [
-            "high schooler",
-            "web developer",
-            "graphic designer",
-            "computer programmer",
-            "robotics engineer"
-        ];
-
-        let wordIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        const textEl = document.getElementById("text");
-
-        function typeEffect() {
-            const currentWord = words[wordIndex];
-            const displayedText = currentWord.substring(0, charIndex);
-            textEl.textContent = displayedText;
-
-            if (!isDeleting) {
-                if (charIndex < currentWord.length) {
-                    charIndex++;
-                    setTimeout(typeEffect, 100);
-                } else {
-                    setTimeout(() => {
-                        isDeleting = true;
-                        typeEffect();
-                    }, 3000);
-                }
-            } else {
-                if (charIndex > 0) {
-                    charIndex--;
-                    setTimeout(typeEffect, 50);
-                } else {
-                    isDeleting = false;
-                    wordIndex = (wordIndex + 1) % words.length;
-                    setTimeout(typeEffect, 300);
-                }
-            }
-        }
-
-        typeEffect();
-
-
     </script>
 </body>
 </html>

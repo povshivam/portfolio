@@ -15,7 +15,6 @@ body {
 html {
     margin: 0;
     padding: 0;
-
 }
 
 
@@ -35,15 +34,64 @@ html {
 .SNIPPET--language {
     font-family: "Monorama", monospace;
     font-weight: 500;
-    font-size: 2.5rem;
     opacity: 0.25;
+    transition: opacity 0.5s ease;
+    padding: 1px 3px;
 }
 
-.SNIPPET--language-html-last {
+.SNIPPET--language-html {
+    font-size: 2.5rem;
+}
+
+.SNIPPET--language-html.top-left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.SNIPPET--language-html.bottom-left {
+    grid-column: 1 / 2;
+    grid-row: 10 / 11;
+}
+
+.SNIPPET--language-html.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.SNIPPET--language-html.bottom-right {
     position: absolute;
     bottom: 0;
     right: 0;
 }
+
+.SNIPPET--language-css {
+    color: #e6e6e6;
+    font-size: 2rem;
+}
+
+.SNIPPET--language-css.top-left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.SNIPPET--language-css.bottom-left {
+    grid-column: 1 / 2;
+    grid-row: 10 / 11;
+}
+
+.SNIPPET--language-css.top-right {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    justify-self: end;
+}
+
+.SNIPPET--language-css.bottom-right {
+    grid-column: 3 / 4;
+    grid-row: 10 / 11;
+    justify-self: end;
+}
+
 
 
 
@@ -73,16 +121,16 @@ html {
     height: 100vh;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
+    transition: opacity 0.5s ease;
 }
 
 .content h2 {
-    margin: 0;
     font-size: 5rem;
     font-weight: 700;
     grid-column: 1 / 2;
     grid-row: 5 / 6;
     align-self: end;
-    margin-left: 60px;
+    margin-left: 65px;
     border: 5px solid #e6e6e63a;
     border-bottom: none;
     padding: 10px 15px 0 15px;
@@ -90,6 +138,7 @@ html {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     color: #e6e6e6cc;
+    transition: opacity 0.5s ease;
 }
 
 .content img {
@@ -99,7 +148,7 @@ html {
     align-self: end;
     grid-column: 2 / 5;
     grid-row: 5 / 6;
-    padding-left: 50px;
+    padding-left: 45px;
     padding-top: 75px;
     z-index: 1;
     transition: opacity 0.5s ease;
@@ -109,7 +158,7 @@ html {
     color: #b05200;
     font-size: 9rem;
     font-weight: 900;
-    grid-column: 1 / 8;
+    grid-column: 1 / 9;
     grid-row: 6 / 7;
     justify-self: start;
     margin-left: 60px;
@@ -117,6 +166,7 @@ html {
     padding: 8px 8px 0 8px;
     box-shadow: 0 0 10px rgba(176, 82, 0, 0.5);
     border-radius: 8px;
+    transition: opacity 0.5s ease;
 }
 
 .content p {
@@ -124,7 +174,7 @@ html {
     font-weight: 500;
 
     position: absolute;
-    top: 25%;
+    top: 24%;
     left: 29%;
     margin-right: 600px;
     opacity: 0.5;
@@ -133,16 +183,7 @@ html {
     align-self: center;
     padding: 0 50px;
     transition: opacity 0.5s ease;
-}
-
-.SNIPPET--language-html {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-.SNIPPET--language-html:last-of-type {
-    grid-column: 1 / 2;
-    grid-row: 10 / 11;
+    z-index: 1;
 }
 
 .typewriter {
@@ -158,6 +199,7 @@ html {
     overflow: hidden;
     padding-bottom: 12px;
     color: #e6e6e6a1;
+    transition: 0.5s ease;
 }
 
 .cursor {
@@ -165,6 +207,7 @@ html {
     width: 10px;
     color: #e6e6e6a1;
     animation: blink 1s infinite;
+    transition: 0.5s ease;
 }
 
 @keyframes blink {
@@ -202,8 +245,8 @@ html {
 
 
 .navigation {
-    width: 500px;
-    height: 600px;
+    width: 550px;
+    height: 750px;
     background-color: #8a3c0f;
     padding: 0;
     box-sizing: border-box;
@@ -212,56 +255,44 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(8, 1fr);
-}
-
-.SNIPPET--language-css {
-    color: #e6e6e6;
-}
-
-.SNIPPET--language-css:nth-of-type(1) {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-.SNIPPET--language-css:nth-of-type(2) {
-    grid-column: 1 / 2;
-    grid-row: 10 / 11;
-}
-
-.SNIPPET--language-css:nth-of-type(3) {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    justify-self: end;
-}
-
-.SNIPPET--language-css:nth-of-type(4) {
-    grid-column: 3 / 4;
-    grid-row: 10 / 11;
-    justify-self: end;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 100px;
+    box-shadow: 0 3px 10px rgb(138, 60, 15);
+    transition: opacity 0.5s ease;
 }
 
 .navigation h2 {
     font-size: 1.25rem;
     font-weight: 500;
-    color: #e6e6e980;
-    padding: 25px 0 15px 50px;
+    padding: 50px 0 25px 50px;
     grid-column: 1 / 4;
+    color: #e6e6e691;
+    transition: opacity 0.5s ease;
 }
 
 .navigation ul {
     list-style: none;
     grid-column: 1 / 4;
+    transition: opacity 0.5s ease;
 }
 
 .navigation ul li {
     margin: 0;
-    padding: 30px 50px;
+    padding: 35px 75px;
+    transition: opacity 0.5s ease;
 }
 
 .navigation ul li a {
     text-decoration: none;
-    color: #e6e6e6;
+    color: #e6e6e6ce;
     font-size: 1.25rem;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: opacity 0.5s ease;
 }
 
 .navigation ul li a span {
@@ -293,13 +324,9 @@ html {
 
 
 
-
-
 /* --- Navigation Styling --- */
 .hover-item {
     position: relative;
-    /* Crucial for positioning the overlays */
-    /* The padding we want to visualize */
     transition: background-color 0.5s ease;
 }
 

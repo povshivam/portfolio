@@ -1,9 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: rgb(34, 31, 30);
 }
 
-#hero {
+.hero {
     display: grid;
     grid-template-columns: 2fr 0fr;
     background-color: rgb(34, 31, 30);
@@ -13,7 +14,15 @@
     align-items: center;
 }
 
-#landing a {
+.landing {
+    background-color: rgb(34, 31, 30)
+}
+
+.landing strong {
+    background-color: rgb(34, 31, 30);
+}
+
+.landing a {
     font-size: 6rem;
     font-family: "Monorama";
     font-weight: 700;
