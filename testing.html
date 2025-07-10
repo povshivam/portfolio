@@ -53,15 +53,81 @@
         </ul>
 
         <h3 class="SNIPPET--language SNIPPET--language-css top-left monorama">CSS</h3>
-        <h3 class="SNIPPET--language SNIPPET--language-css top-right monorama">CSS</h3>
         <h3 class="SNIPPET--language SNIPPET--language-css bottom-left monorama">CSS</h3>
+        <h3 class="SNIPPET--language SNIPPET--language-css top-right monorama">CSS</h3>
         <h3 class="SNIPPET--language SNIPPET--language-css bottom-right monorama">CSS</h3>
-
-        <!-- <img src="img/ps-logo_white-black.png"> -->
     </div>
+
+    <h3 class="SNIPPET--language SNIPPET--language-html bottom-right">HTML</h3>
+    <h3 class="SNIPPET--language SNIPPET--language-html top-right">HTML</h3>
+
+    <svg height="0" width="0">
+        <filter
+        style="color-interpolation-filters:sRGB"
+        id="outline">
+        <feComponentTransfer
+            result="result10">
+            <feFuncR
+            type="identity" />
+            <feFuncG
+            type="identity" />
+            <feFuncB
+            type="identity" />
+            <feFuncA
+            type="gamma"
+            tableValues=""
+            intercept="10"
+            amplitude="10"
+            exponent="7"
+            offset="0" />
+        </feComponentTransfer>
+        <!-- change the stdDeviation here for the outer diameter -->
+        <feGaussianBlur
+            stdDeviation="7"
+            in="result10" />
+        <feColorMatrix
+            values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 500 0 "
+            result="result2" />
+            <!-- change the stdDeviation here for the inner diameter -->
+        <feGaussianBlur
+            stdDeviation="4"
+            in="result10"
+            result="result5" />
+        <feColorMatrix
+            values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 500 0 "
+            result="result4" />
+            <!-- change the flood-color here the outline color -->
+        <feFlood
+            result="result1"
+            flood-color="#b05200" />
+        <feComposite
+            in="result2"
+            in2="result4"
+            operator="out"
+            result="result3" />
+        <feComposite
+            in2="result3"
+            operator="in"
+            in="result1"
+            result="result8" />
+            <!-- change the stdDeviation here to smooth out the final outline -->
+        <feGaussianBlur
+            stdDeviation="0.3"
+            result="result6" />
+        <feBlend
+            mode="overlay"
+            in2="SourceGraphic"/>
+        </filter>
+    </svg>
 
 
     <script>
+
+
+
+
+
+
         //
         // HOVER EFFECT FOR PARAGRAPH AND IMAGE
         // 

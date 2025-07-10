@@ -138,7 +138,6 @@ html {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     color: #e6e6e6cc;
-    transition: opacity 0.5s ease;
 }
 
 .content img {
@@ -166,7 +165,6 @@ html {
     padding: 8px 8px 0 8px;
     box-shadow: 0 0 10px rgba(176, 82, 0, 0.5);
     border-radius: 8px;
-    transition: opacity 0.5s ease;
 }
 
 .content p {
@@ -181,9 +179,9 @@ html {
 
     color: #e6e6e6a1;
     align-self: center;
-    padding: 0 50px;
-    transition: opacity 0.5s ease;
+    margin: 0 50px;
     z-index: 1;
+    transition: opacity 0.5s ease;
 }
 
 .typewriter {
@@ -199,7 +197,6 @@ html {
     overflow: hidden;
     padding-bottom: 12px;
     color: #e6e6e6a1;
-    transition: 0.5s ease;
 }
 
 .cursor {
@@ -207,7 +204,6 @@ html {
     width: 10px;
     color: #e6e6e6a1;
     animation: blink 1s infinite;
-    transition: 0.5s ease;
 }
 
 @keyframes blink {
@@ -260,29 +256,26 @@ html {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     margin-right: 100px;
-    box-shadow: 0 3px 10px rgb(138, 60, 15);
+    box-shadow: 0 0 8px rgb(138, 60, 15);
     transition: opacity 0.5s ease;
 }
 
 .navigation h2 {
     font-size: 1.25rem;
     font-weight: 500;
-    padding: 50px 0 25px 50px;
+    padding: 50px 0 35px 50px;
     grid-column: 1 / 4;
     color: #e6e6e691;
-    transition: opacity 0.5s ease;
 }
 
 .navigation ul {
     list-style: none;
     grid-column: 1 / 4;
-    transition: opacity 0.5s ease;
 }
 
 .navigation ul li {
     margin: 0;
     padding: 35px 75px;
-    transition: opacity 0.5s ease;
 }
 
 .navigation ul li a {
@@ -292,13 +285,22 @@ html {
     width: 100%;
     height: 100%;
     display: block;
-    transition: opacity 0.5s ease;
 }
 
 .navigation ul li a span {
     color: #e6e6e971;
     font-weight: 500;
 }
+
+/* .navigation img {
+    grid-column: 1 / 4;
+    grid-row: 4 / 8;
+    width: 175px;
+    height: 100px;
+    align-self: center;
+    justify-self: center;
+    padding-right: 25px;
+} */
 
 
 
@@ -340,8 +342,8 @@ html {
     pointer-events: none;
     /* Allows clicks to go through to the element below */
     opacity: 0;
-    transition: opacity 0.6s ease;
-    z-index: 10;
+    transition: opacity 0.5s ease;
+    z-index: 2;
 }
 
 .hover-item:hover .padding-visualizer {
@@ -353,8 +355,10 @@ html {
     background-color: rgba(126, 198, 153, 0.25);
     box-sizing: border-box;
     border: 1px dashed #7ec699;
-    background-color: #e6e6e621;
-    border: 1px dashed #e6e6e659;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px dashed #e6e6e654;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.075);
 }
 
 /* The four padding areas */
@@ -385,15 +389,21 @@ html {
 /* The text labels for pixel values */
 .padding-visualizer .value {
     position: absolute;
-    color: #7ec699;
-    color: rgba(126, 198, 153, 0.75);
     font-size: 12px;
     background-color: #011627c5;
-    /* Match body background */
-    padding: 2px 4px;
+
+    /*
+    background-color: rgba(34, 31, 30, 0.199);
+    color: #e6e6e6a8;
+    background-color: rgba(0, 0, 0, 0.438);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.671);
+    */
+
+    color: #e6e6e6be;
+    background-color: rgba(34, 31, 30, 0.7);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
     border-radius: 3px;
-    background-color: rgba(34, 31, 30);
-    color: #e6e6e6cc;
+    padding: 3px 5px;
 }
 
 /* Positioning the text labels */
