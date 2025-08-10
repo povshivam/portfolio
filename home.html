@@ -1,106 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="home.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="home.css" />
 
-    <title>Shivam Patel</title>
-</head>
-<body>
+    <title>povshivam</title>
+    <link rel="icon" type="png" href="img/Favicon.png" />
+  </head>
+  <body>
     <div class="content monorama">
+      <h2>I'M</h2>
 
-        <h2>I'M</h2>
-
-        <img src="img/bgremoverai.com-1.png" alt="profile picture" id="myImage">
-
-        <h1>SHIVAM PATEL</h1>
+      <div class="myself">
+        <img
+          src="img/bgremoverai.com-1.png"
+          alt="profile picture"
+          id="myImage"
+        />
 
         <p class="neon" id="myParagraph">
-            &lt;p&gt;
-            <br>&thinsp;&thinsp;&thinsp;&thinsp;Hey there! I'm a high school senior who enjoys working at the 
-            <br>&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;intersection of technology and design, whether that's through 
-            <br>&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;photography, video editing, graphic design, or website 
-            <br>&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;development. I also spend time coding and creating visuals to 
-            <br>&thinsp;&thinsp;&thinsp;&thinsp;bring ideas to life. This site is a collection of the things
-            <br>&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;that I’ve been working on and learning along the way.
-            <br>
-            &emsp;&lt;/p&gt;
+          &lt;p&gt;
+          <br />
+          Hey! I’m a high school senior who loves exploring the space where tech
+          meets creativity. Whether I’m behind a camera, editing videos,
+          designing graphics, or building websites, I’m always finding new ways
+          to bring ideas to life. This site is a glimpse into the projects I’ve
+          been working on and everything I’ve been learning along the way.
+          <br />
+          &lt;/p&gt;
         </p>
+      </div>
 
-        <div class="typewriter" id="typewriter">
-            <span id="text"></span><span class="cursor" id="cursor">_</span>
-        </div>
+      <h1>SHIVAM PATEL</h1>
 
-        <h3 class="SNIPPET--language SNIPPET--language-html top-left">HTML</h3>
+      <div class="typewriter" id="typewriter">
+        <span id="text"></span><span class="cursor" id="cursor">_</span>
+      </div>
 
-        <h3 class="SNIPPET--language SNIPPET--language-html bottom-left">HTML</h3>        
+      <h3 class="SNIPPET--language SNIPPET--language-html top-left">HTML</h3>
 
+      <h3 class="SNIPPET--language SNIPPET--language-html bottom-left">HTML</h3>
     </div>
-
 
     <div class="navigation krypton">
+      <h2 class="xenon">/* --- navigation --- */</h2>
 
-        <h2 class="xenon">/* --- navigation --- */</h2>
+      <ul>
+        <li class="hover-item">
+          <a href="#">.home <span>{}</span></a>
+        </li>
+        <li class="hover-item">
+          <a href="projects.html">.projects <span>{}</span></a>
+        </li>
+        <li class="hover-item">
+          <a href="#">.lab <span>{}</span></a>
+        </li>
+        <li class="hover-item">
+          <a href="#">.blog <span>{}</span></a>
+        </li>
+        <li class="hover-item">
+          <a href="#">.about <span>{}</span></a>
+        </li>
+      </ul>
 
-        <ul>
-            <li class="hover-item"><a href="#">.home <span>{}</span></a></li>
-            <li class="hover-item"><a href="projects.html">.projects <span>{}</span></a></li>
-            <li class="hover-item"><a href="#">.lab <span>{}</span></a></li>
-            <li class="hover-item"><a href="#">.blog <span>{}</span></a></li>
-            <li class="hover-item"><a href="#">.about <span>{}</span></a></li>
-        </ul>
+      <h3 class="SNIPPET--language SNIPPET--language-css top-left monorama">
+        CSS
+      </h3>
+      <h3 class="SNIPPET--language SNIPPET--language-css top-right monorama">
+        CSS
+      </h3>
+      <h3 class="SNIPPET--language SNIPPET--language-css bottom-left monorama">
+        CSS
+      </h3>
+      <h3 class="SNIPPET--language SNIPPET--language-css bottom-right monorama">
+        CSS
+      </h3>
 
-        <h3 class="SNIPPET--language SNIPPET--language-css top-left monorama">CSS</h3>
-        <h3 class="SNIPPET--language SNIPPET--language-css top-right monorama">CSS</h3>
-        <h3 class="SNIPPET--language SNIPPET--language-css bottom-left monorama">CSS</h3>
-        <h3 class="SNIPPET--language SNIPPET--language-css bottom-right monorama">CSS</h3>
-
-        <!-- <img src="img/ps-logo_white-black.png"> -->
+      <!-- <img src="img/ps-logo_white-black.png"> -->
     </div>
 
-
     <script>
-        //
-        // HOVER EFFECT FOR PARAGRAPH AND IMAGE
-        // 
-        const paragraph = document.getElementById("myParagraph");
-        const image = document.getElementById("myImage");
+      //
+      // HOVER EFFECT FOR PARAGRAPH AND IMAGE
+      //
+      const paragraph = document.getElementById("myParagraph");
+      const image = document.getElementById("myImage");
 
-        paragraph.addEventListener("mouseover", () => {
-            paragraph.style.opacity = "1";
-            image.style.opacity = "0.5";
-        });
+      paragraph.addEventListener("mouseover", () => {
+        paragraph.style.opacity = "1";
+        image.style.opacity = "0.5";
+      });
 
-        paragraph.addEventListener("mouseout", () => {
-            paragraph.style.opacity = "0.5";
-            image.style.opacity = "1";
-        });
+      paragraph.addEventListener("mouseout", () => {
+        paragraph.style.opacity = "0.5";
+        image.style.opacity = "1";
+      });
 
+      //
+      // PAADING VISUALIZER
+      //
+      document.addEventListener("DOMContentLoaded", () => {
+        // Select all elements you want this effect on
+        const visualizerTargets = document.querySelectorAll(".hover-item");
 
+        visualizerTargets.forEach((target) => {
+          // Get the computed padding values from CSS
+          const style = getComputedStyle(target);
+          const paddingTop = style.paddingTop;
+          const paddingBottom = style.paddingBottom;
+          const paddingLeft = style.paddingLeft;
+          const paddingRight = style.paddingRight;
 
-
-
-
-
-        //
-        // PAADING VISUALIZER
-        //
-        document.addEventListener('DOMContentLoaded', () => {
-            // Select all elements you want this effect on
-            const visualizerTargets = document.querySelectorAll('.hover-item');
-
-            visualizerTargets.forEach(target => {
-                // Get the computed padding values from CSS
-                const style = getComputedStyle(target);
-                const paddingTop = style.paddingTop;
-                const paddingBottom = style.paddingBottom;
-                const paddingLeft = style.paddingLeft;
-                const paddingRight = style.paddingRight;
-
-                // Create the HTML structure for the visualizer
-                const visualizerHTML = `
+          // Create the HTML structure for the visualizer
+          const visualizerHTML = `
                     <div class="padding-visualizer">
                         <div class="padding-area top" style="height: ${paddingTop};">
                             <span class="value">${paddingTop}</span>
@@ -117,107 +131,110 @@
                     </div>
                 `;
 
-                // Add the visualizer HTML to each target element
-                target.innerHTML += visualizerHTML;
-            });
+          // Add the visualizer HTML to each target element
+          target.innerHTML += visualizerHTML;
+        });
+      });
+
+      //
+      // TYPERWRITER EFFECT
+      //
+      const words = [
+        "<!--high schooler-->",
+        "<!--web developer-->",
+        "<!--graphic designer-->",
+        "<!--computer programmer-->",
+        "<!--robotics engineer-->",
+      ];
+
+      let wordIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      const textEl = document.getElementById("text");
+
+      function typeEffect() {
+        const currentWord = words[wordIndex];
+        const displayedText = currentWord.substring(0, charIndex);
+        textEl.textContent = displayedText;
+
+        if (!isDeleting) {
+          if (charIndex < currentWord.length) {
+            charIndex++;
+            setTimeout(typeEffect, 125);
+          } else {
+            setTimeout(() => {
+              isDeleting = true;
+              typeEffect();
+            }, 3000);
+          }
+        } else {
+          if (charIndex > 0) {
+            charIndex--;
+            setTimeout(typeEffect, 75);
+          } else {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            setTimeout(typeEffect, 500);
+          }
+        }
+      }
+
+      typeEffect();
+
+      //
+      // SNIPPET HOVER EFFECT
+      //
+      const elementsHTML = document.getElementsByClassName(
+        "SNIPPET--language-html"
+      );
+      const contentNotHTML = document.querySelectorAll(
+        ".content *:not(.SNIPPET--language-html)"
+      );
+      const navigationNotHTML = document.querySelectorAll(
+        ".navigation:not(.SNIPPET--language-html)"
+      );
+      console.log(contentNotHTML, navigationNotHTML);
+
+      // Function to set opacity on all snippet blocks
+      function setSnippetOpacity(value, elements) {
+        for (let element of elements) {
+          element.style.opacity = value;
+        }
+      }
+
+      for (let corner of elementsHTML) {
+        corner.addEventListener("mouseenter", () => {
+          setSnippetOpacity("0.6", elementsHTML);
+          setSnippetOpacity("0.25", navigationNotHTML);
         });
 
+        corner.addEventListener("mouseleave", () => {
+          setSnippetOpacity("0.25", elementsHTML);
+          setSnippetOpacity("1", navigationNotHTML);
+        });
+      }
 
+      const elementsCSS = document.getElementsByClassName(
+        "SNIPPET--language-css"
+      );
+      const contentNotCSS = document.querySelectorAll(
+        ".content:not(.SNIPPET--language-css)"
+      );
+      const navigationNotCSS = document.querySelectorAll(
+        ".navigation *:not(.SNIPPET--language-css)"
+      );
 
+      for (let corner of elementsCSS) {
+        corner.addEventListener("mouseenter", () => {
+          setSnippetOpacity("0.6", elementsCSS);
+          setSnippetOpacity("0.25", contentNotCSS);
+        });
 
-
-
-
-        //
-        // TYPERWRITER EFFECT
-        //
-        const words = [
-            "<!--high schooler-->",
-            "<!--web developer-->",
-            "<!--graphic designer-->",
-            "<!--computer programmer-->",
-            "<!--robotics engineer-->"
-        ];
-
-        let wordIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        const textEl = document.getElementById("text");
-
-        function typeEffect() {
-            const currentWord = words[wordIndex];
-            const displayedText = currentWord.substring(0, charIndex);
-            textEl.textContent = displayedText;
-
-            if (!isDeleting) {
-                if (charIndex < currentWord.length) {
-                    charIndex++;
-                    setTimeout(typeEffect, 125);
-                } else {
-                    setTimeout(() => {
-                        isDeleting = true;
-                        typeEffect();
-                    }, 3000);
-                }
-            } else {
-                if (charIndex > 0) {
-                    charIndex--;
-                    setTimeout(typeEffect, 75);
-                } else {
-                    isDeleting = false;
-                    wordIndex = (wordIndex + 1) % words.length;
-                    setTimeout(typeEffect, 500);
-                }
-            }
-        }
-
-        typeEffect();
-
-
-
-        const elementsHTML = document.getElementsByClassName("SNIPPET--language-html");
-        const contentNotHTML = document.querySelectorAll('.content *:not(.SNIPPET--language-html)');
-        const navigationNotHTML = document.querySelectorAll('.navigation:not(.SNIPPET--language-html)');
-        console.log(contentNotHTML, navigationNotHTML);
-
-        // Function to set opacity on all snippet blocks
-        function setSnippetOpacity(value, elements) {
-            for (let element of elements) {
-                element.style.opacity = value;
-            }
-        }
-
-        for (let corner of elementsHTML) {
-            corner.addEventListener("mouseenter", () => {
-                setSnippetOpacity("0.6", elementsHTML);
-                setSnippetOpacity("0.25", navigationNotHTML);
-            });
-
-            corner.addEventListener("mouseleave", () => {
-                setSnippetOpacity("0.25", elementsHTML);
-                setSnippetOpacity("1", navigationNotHTML);
-            });
-        }
-
-
-
-
-        const elementsCSS = document.getElementsByClassName("SNIPPET--language-css");
-        const contentNotCSS = document.querySelectorAll('.content:not(.SNIPPET--language-css)');
-        const navigationNotCSS = document.querySelectorAll('.navigation *:not(.SNIPPET--language-css)');
-
-        for (let corner of elementsCSS) {
-            corner.addEventListener("mouseenter", () => {
-                setSnippetOpacity("0.6", elementsCSS);
-                setSnippetOpacity("0.25", contentNotCSS);
-            });
-
-            corner.addEventListener("mouseleave", () => {
-                setSnippetOpacity("0.25", elementsCSS);
-                setSnippetOpacity("1", contentNotCSS);
-            });
-        }
-
+        corner.addEventListener("mouseleave", () => {
+          setSnippetOpacity("0.25", elementsCSS);
+          setSnippetOpacity("1", contentNotCSS);
+        });
+      }
     </script>
-</body>
+  </body>
 </html>

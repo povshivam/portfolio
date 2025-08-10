@@ -1,89 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="projects.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="icon" type="png" href="img/Favicon.png" />
 
     <title>Shivam Patel</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="carousel monorama">
+      <h3 class="SNIPPET--language SNIPPET--language-cpp bottom-left">C++</h3>
 
+      <h3 class="SNIPPET--language SNIPPET--language-cpp bottom-right">C++</h3>
 
-    <div class="content xenon">
-        <h2><a href="projects/school/grade8/science/chapter9/Loading.html">Periodic Table</a></h2>
-        <h2><a href="https://omnifood-shivamp.netlify.app">Omnifood v2</a></h2>
-
-        <h2><a href="projects/covid-19/Home/index.html">COVID-19</a></h2>
-        <h2><a href="projects/omnifood/index.html">Omnifood v1</a></h2>
-    </div>
-
-
-    <div class="navigation krypton">
-
-        <h2 class="xenon">/* --- navigation --- */</h2>
-
+      <div class="navigation krypton">
         <ul>
-            <li class="hover-item"><a href="home.html">.home <span>{}</span></a></li>
-            <li class="hover-item"><a href="#">.projects <span>{}</span></a></li>
-            <li class="hover-item"><a href="#">.lab <span>{}</span></a></li>
-            <li class="hover-item"><a href="#">.blog <span>{}</span></a></li>
-            <li class="hover-item"><a href="#">.about <span>{}</span></a></li>
+          <div class="language">
+            <h3
+              class="SNIPPET--language SNIPPET--language-css top-left monorama"
+            >
+              CSS
+            </h3>
+            <h3
+              class="SNIPPET--language SNIPPET--language-css bottom-left monorama"
+            >
+              CSS
+            </h3>
+          </div>
+          <li class="hover-item">
+            <a href="home.html">.home <span>{}</span></a>
+          </li>
+          <li class="hover-item">
+            <a href="#">.projects <span>{}</span></a>
+          </li>
+          <li class="hover-item">
+            <a href="#">.lab <span>{}</span></a>
+          </li>
+          <li class="hover-item">
+            <a href="#">.blog <span>{}</span></a>
+          </li>
+          <li class="hover-item">
+            <a href="#">.about <span>{}</span></a>
+          </li>
+          <div class="language">
+            <h3
+              class="SNIPPET--language SNIPPET--language-css top-right monorama"
+            >
+              CSS
+            </h3>
+            <h3
+              class="SNIPPET--language SNIPPET--language-css bottom-right monorama"
+            >
+              CSS
+            </h3>
+          </div>
         </ul>
+      </div>
 
-        <h3 class="SNIPPET--language SNIPPET--language-css top-left monorama">CSS</h3>
-        <h3 class="SNIPPET--language SNIPPET--language-css bottom-left monorama">CSS</h3>
-        <h3 class="SNIPPET--language SNIPPET--language-css top-right monorama">CSS</h3>
-        <h3 class="SNIPPET--language SNIPPET--language-css bottom-right monorama">CSS</h3>
+      <div class="project">
+        <div id="project--header">
+          <p id="project--cout" class="krypton">cout&lt;&lt;</p>
+          <a id="project--title" onclick="location.href = this.href"></a>
+          <p id="project--endl" class="krypton">&lt;&lt;endl</p>
+        </div>
+        <p id="project--subtitle" class="neon"></p>
+      </div>
+
+      <div id="project--year" class="neon">
+        <h3><span class="plus--large">[]</span>&thinsp;YEAR</h3>
+        <p></p>
+      </div>
+
+      <div id="project--software" class="neon">
+        <h3><span class="plus--large">[]</span>&thinsp;LABELS</h3>
+        <p></p>
+      </div>
+
+      <div id="project--snapshot"></div>
+
+      <div class="vertical-nav monorama">
+        <div data-target="1">P/01</div>
+        <div data-target="2">P/02</div>
+        <div data-target="3">P/03</div>
+        <div data-target="4">P/04</div>
+        <div data-target="5">P/05</div>
+        <div data-target="6">P/06</div>
+        <div data-target="7">P/07</div>
+        <div data-target="8">P/08</div>
+        <div data-target="9">P/09</div>
+      </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Select all elements you want this effect on
-            const visualizerTargets = document.querySelectorAll('.hover-item');
+      // const navItems = document.querySelectorAll(".vertical-nav div");
+      // const carousel = document.querySelector(".carousel");
 
-            visualizerTargets.forEach(target => {
-                // Get the computed padding values from CSS
-                const style = getComputedStyle(target);
-                const paddingTop = style.paddingTop;
-                const paddingBottom = style.paddingBottom;
-                const paddingLeft = style.paddingLeft;
-                const paddingRight = style.paddingRight;
+      // const projects = [
+      //   {
+      //     title: "Coronavirus ",
+      //     subtitle:
+      //       "quick facts on COVID-19 pandemic and preventative measures",
+      //     year: "2020",
+      //     software: "Website - Health Brackets - Canva - HTML - CSS",
+      //     tag: "Website + Health + COVID-19",
+      //     image: "img/coronavirus.jpeg",
+      //     link: "projects/covid-19/Home/index.html",
+      //   },
+      //   {
+      //     title: "Atomic History",
+      //     subtitle: "atomic history and element guide",
+      //     year: "2022",
+      //     software: "Website - School - Science - VS Code - HTML - CSS - JS",
+      //     tag: "Website + School + Science",
+      //     image: "img/periodic-table.png",
+      //     link: "projects/school/grade8/science/chapter9/Loading.html",
+      //   },
+      //   {
+      //     title: "Omnifood v1",
+      //     subtitle:
+      //       "inventive food subscription service promising healthy meals and fresh indegredients",
+      //     year: "2023",
+      //     software:
+      //       "Website - Responsive - VS Code - HTML - CSS - JQuery - SQL",
+      //     tag: "Website ▪ Responsive ▪ Food Service",
+      //     image: "img/omnifood-v1.jpg",
+      //     link: "projects/omnifood/index.html",
+      //   },
+      //   {
+      //     title: "Omnifood v2",
+      //     subtitle:
+      //       "inventive food subscription service promising healthy meals and fresh indegredients",
+      //     year: "2024",
+      //     software:
+      //       "Website - Responsive - VS Code - HTML - CSS - JQuery - SQL",
+      //     tag: "Website ▪ Responsive ▪ Food  Service",
+      //     image: "img/omnifood-v2.png",
+      //     link: "https://omnifood-shivamp.netlify.app/",
+      //   },
+      //   {
+      //     title: "ALS-AID",
+      //     subtitle: "AI-driven diagnostic model for early ALS detection",
+      //     year: "2024",
+      //     software: "Poster - Research - Illustrator - Photoshop",
+      //     tag: "Poster ▪ Research ▪ Neurodegenerative Disease",
+      //     image: "img/omnifood-v2.png",
+      //     link: "https://omnifood-shivamp.netlify.app/",
+      //   },
+      // ];
 
-                // Create the HTML structure for the visualizer
-                const visualizerHTML = `
-                    <div class="padding-visualizer">
-                        <div class="padding-area top" style="height: ${paddingTop};">
-                            <span class="value">${paddingTop}</span>
-                        </div>
-                        <div class="padding-area bottom" style="height: ${paddingBottom};">
-                            <span class="value">${paddingBottom}</span>
-                        </div>
-                        <div class="padding-area left" style="width: ${paddingLeft};">
-                            <span class="value">${paddingLeft}</span>
-                        </div>
-                        <div class="padding-area right" style="width: ${paddingRight};">
-                            <span class="value">${paddingRight}</span>
-                        </div>
-                    </div>
-                `;
+      // function setProject(index) {
+      //   const data = projects[index];
+      //   document.getElementById("project--title").textContent = data.title;
+      //   document.getElementById("project--title").href = data.link;
 
-                // Add the visualizer HTML to each target element
-                target.innerHTML += visualizerHTML;
-            });
+      //   document.getElementById("project--subtitle").innerHTML =
+      //     data.subtitle.replace("/", "<span>/</span>");
+
+      //   document.querySelector("#project--year p").textContent = data.year;
+      //   document.querySelector("#project--software p").textContent =
+      //     data.software;
+
+      //   for (let i = 0; i < 10; i++) {
+      //     data.software = data.software.replace("-", "<span>+</span>");
+      //   }
+      //   document.querySelector("#project--software p").innerHTML =
+      //     data.software.replace("-", "<span>+</span>");
+
+      //   document.getElementById(
+      //     "project--snapshot"
+      //   ).style.backgroundImage = `url(${data.image})`;
+
+      //   navItems.forEach((item, i) => {
+      //     item.classList.toggle("active", i === index);
+      //   });
+      // }
+
+      // navItems.forEach((item, index) => {
+      //   item.addEventListener("click", () => {
+      //     setProject(index);
+      //   });
+      // });
+
+      // // Load first project
+      // setProject(0);
+
+      const navItems = document.querySelectorAll(".vertical-nav div");
+      const carousel = document.querySelector(".carousel");
+
+      const projects = [
+        {
+          title: "Coronavirus ",
+          subtitle:
+            "quick facts on COVID-19 pandemic and preventative measures",
+          year: "2020",
+          software: "Website + Health + Brackets + Canva + HTML + CSS",
+          tag: "Website + Health + COVID-19",
+          image: "img/coronavirus.jpeg",
+          link: "projects/covid-19/Home/index.html",
+        },
+        {
+          title: "Atomic History",
+          subtitle: "atomic history and element guide",
+          year: "2022",
+          software: "Website + School + Science + VS Code + HTML + CSS + JS",
+          tag: "Website + School + Science",
+          image: "img/periodic-table.png",
+          link: "projects/school/grade8/science/chapter9/Loading.html",
+        },
+        {
+          title: "Omnifood v1",
+          subtitle:
+            "inventive food subscription service promising healthy meals and fresh indegredients",
+          year: "2023",
+          software:
+            "Website + Responsive + VS Code + HTML + CSS + JQuery + SQL",
+          tag: "Website + Responsive + Food Service",
+          image: "img/omnifood-v1.jpg",
+          link: "projects/omnifood/index.html",
+        },
+        {
+          title: "Omnifood v2",
+          subtitle:
+            "inventive food subscription service promising healthy meals and fresh indegredients",
+          year: "2024",
+          software:
+            "Website + Responsive + VS Code + HTML + CSS + JQuery + SQL",
+          tag: "Website + Responsive + Food Service",
+          image: "img/omnifood-v2.png",
+          link: "https://omnifood-shivamp.netlify.app/",
+        },
+        // {
+        //   title: "ALS-AID",
+        //   subtitle: "AI-driven diagnostic model for early ALS detection",
+        //   year: "2024",
+        //   software: "Poster + Research + Illustrator + Photoshop",
+        //   tag: "Poster + Research + Neurodegenerative Disease",
+        //   image: "img/omnifood-v2.png",
+        //   link: "https://omnifood-shivamp.netlify.app/",
+        // },
+      ];
+
+      let currentProject = 0;
+
+      function formatPlusSigns(text) {
+        return text.replace(/\+/g, '<span class="plus">+</span>');
+      }
+
+      function setProject(index) {
+        const data = projects[index];
+
+        document.getElementById("project--title").textContent = data.title;
+        document.getElementById("project--title").href = data.link;
+
+        document.getElementById("project--subtitle").innerHTML = data.subtitle;
+
+        document.querySelector("#project--year p").textContent = data.year;
+        document.querySelector("#project--software p").innerHTML =
+          formatPlusSigns(data.software);
+
+        document.getElementById(
+          "project--snapshot"
+        ).style.backgroundImage = `url(${data.image})`;
+
+        navItems.forEach((item, i) => {
+          item.classList.toggle("active", i === index);
         });
+      }
+
+      // Button click support
+      navItems.forEach((item, index) => {
+        item.addEventListener("click", () => {
+          currentProject = index;
+          setProject(currentProject);
+        });
+      });
+
+      let scrollAccumulator = 0;
+      const scrollThreshold = 200; // Higher value = requires more scroll before switching
+
+      window.addEventListener("wheel", (event) => {
+        scrollAccumulator += event.deltaY * 0.4;
+
+        // How many whole project steps have we scrolled?
+        let steps = Math.floor(Math.abs(scrollAccumulator) / scrollThreshold);
+
+        if (steps > 0) {
+          if (scrollAccumulator > 0) {
+            // Scroll down
+            currentProject = (currentProject + steps) % projects.length;
+          } else {
+            // Scroll up
+            currentProject =
+              (currentProject - steps + projects.length) % projects.length;
+          }
+
+          setProject(currentProject);
+
+          // Keep the remainder so partial scrolls carry over
+          scrollAccumulator = scrollAccumulator % scrollThreshold;
+        }
+      });
+
+      // Touch support
+      let startY = 0;
+      window.addEventListener("touchstart", (e) => {
+        startY = e.touches[0].clientY;
+      });
+      window.addEventListener("touchend", (e) => {
+        let endY = e.changedTouches[0].clientY;
+        let deltaY = startY - endY;
+
+        if (Math.abs(deltaY) > 50) {
+          if (deltaY > 0) {
+            currentProject = (currentProject + 1) % projects.length; // swipe up
+          } else {
+            currentProject =
+              (currentProject - 1 + projects.length) % projects.length; // swipe down
+          }
+          setProject(currentProject);
+        }
+      });
+
+      // Load first project
+      setProject(0);
+
+      //
+      // SNIPPET HOVER EFFECT
+      //
+      const elementsCPP = document.getElementsByClassName(
+        "SNIPPET--language-cpp"
+      );
+      const contentNotCPP = document.querySelectorAll(".vertical-nav");
+      const navigationNotCPP = document.querySelectorAll(".navigation");
+      console.log(contentNotCPP, navigationNotCPP);
+
+      // Function to set opacity on all snippet blocks
+      function setSnippetOpacity(value, elements) {
+        for (let element of elements) {
+          element.style.opacity = value;
+        }
+      }
+
+      for (let corner of elementsCPP) {
+        corner.addEventListener("mouseenter", () => {
+          setSnippetOpacity("0.6", elementsCPP);
+          setSnippetOpacity("0.25", navigationNotCPP);
+          setSnippetOpacity("0.25", contentNotCPP);
+          snapshot.style.border = "2px solid #fff";
+          snapshot.style.boxShadow = "0 0 5px #fff";
+        });
+
+        corner.addEventListener("mouseleave", () => {
+          setSnippetOpacity("0.25", elementsCPP);
+          setSnippetOpacity("1", contentNotCPP);
+          setSnippetOpacity("1", navigationNotCPP);
+          snapshot.style.border = "2px solid #e6e6e6b4";
+          snapshot.style.boxShadow = "0 0 5px #e6e6e6b4";
+        });
+      }
+
+      const elementsCSS = document.getElementsByClassName(
+        "SNIPPET--language-css"
+      );
+      const contentNotCSS = document.querySelectorAll(
+        "div.project, div#project--year, div#project--software, div#project--snapshot, h3.SNIPPET--language-cpp"
+      );
+      const snapshot = document.getElementById("project--snapshot");
+
+      for (let corner of elementsCSS) {
+        corner.addEventListener("mouseenter", () => {
+          setSnippetOpacity("0.6", elementsCSS);
+          setSnippetOpacity("0.25", contentNotCSS);
+          setSnippetOpacity("0.0625", elementsCPP);
+        });
+
+        corner.addEventListener("mouseleave", () => {
+          setSnippetOpacity("0.25", elementsCSS);
+          setSnippetOpacity("1", contentNotCSS);
+          setSnippetOpacity("0.25", elementsCPP);
+        });
+      }
+
+      //
+      // HOVER EFFECT FOR TITLE AND SUBTITLE
+      //
+      const title = document.getElementById("project--title");
+      const subtitle = document.getElementById("project--subtitle");
+
+      title.addEventListener("mouseover", () => {
+        subtitle.style.color = "#888";
+      });
+
+      title.addEventListener("mouseout", () => {
+        subtitle.style.color = "#e6e6e6cf";
+      });
     </script>
-</body>
+  </body>
 </html>

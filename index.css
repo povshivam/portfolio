@@ -23,17 +23,13 @@
 }
 
 .landing a {
-    font-size: 6rem;
-    font-family: "Monorama";
-    font-weight: 700;
-    font-style: normal;
-    color: #b05200;
-    align-content: end;
-    justify-content: center;
-    background: none;
-    border: none;
     text-decoration: none;
 }
+
+.landing img {
+    aspect-ratio: 85 / 19;
+    width: 30rem;
+}   
 
 
 /* Cursor */

@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="png" href="img/Favicon.png" />
 
-  <link rel="stylesheet" href="fonts.css">
-  <link rel="stylesheet" href="index.css" />
+    <title>Shivam Patel &mdash; Home</title>
+  </head>
 
-  <title>Shivam Patel &mdash; Home</title>
-</head>
+  <body>
+    <section class="hero">
+      <div class="landing">
+        <a href="home.html"><img src="img/7testing.svg" alt="" /></a>
+        <!-- <a href="home.html"><strong>&lt;</strong>HELLO, WORLD!<strong>&gt;</strong></a> -->
+      </div>
+    </section>
 
-<body>
-  <section class="hero">
-    <div class="landing">
-      <a href="home.html"><strong>&lt;</strong>HELLO, WORLD!<strong>&gt;</strong></a>
-    </div>
-  </section>
+    <script>
+      function pageTransition(nextPage) {
+        document.body.style.opacity = 0;
+        document.body.style.transition = "opacity 1s";
 
+        setTimeout(() => {
+          window.location.href = nextPage;
+        }, 800);
+      }
 
-  <script>
-    function pageTransition(nextPage) {
-    
-    document.body.style.opacity = 0;
-    document.body.style.transition = "opacity 1s";
-    
-    setTimeout(() => {
-            window.location.href = nextPage;
-        },  800);
-    }
-
-    const link = document.querySelector('a');
-    link.addEventListener('click', (e) => {
+      const link = document.querySelector("a");
+      link.addEventListener("click", (e) => {
         e.preventDefault();
         pageTransition(link.href);
-    });
-
-
-
-  </script>
-</body>
+      });
+    </script>
+  </body>
 </html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 225">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 140px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #e6e6e6;
+      }
+
+      .cls-1, .cls-3 {
+        font-family: VoxRoundWideW01-Semibold, VoxRoundWideW01-Semibold;
+        font-weight: 600;
+      }
+
+      .cls-3 {
+        font-size: 110px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #af5426;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        fill: #af5526;
+      }
+    </style>
+  </defs>
+  <g>
+    <text class="cls-1" transform="translate(45.31 158.56)"><tspan x="0" y="0">PO</tspan><tspan class="cls-5" x="211.4" y="0">V</tspan></text>
+    <text class="cls-3" transform="translate(346.76 158.56)"><tspan x="0" y="0">SHIVAM</tspan></text>
+  </g>
+  <rect class="cls-6" width="346.76" height="15"/>
+  <rect class="cls-6" x="-33.48" y="33.48" width="81.97" height="15" transform="translate(-33.48 48.48) rotate(-90)"/>
+  <rect class="cls-2" x="354.35" y="0" width="495.65" height="15" transform="translate(1204.35 15) rotate(-180)"/>
+  <rect class="cls-2" x="801.52" y="33.48" width="81.97" height="15" transform="translate(801.52 883.48) rotate(-90)"/>
+  <rect class="cls-4" y="210" width="346.76" height="15"/>
+  <rect class="cls-4" x="-33.48" y="176.52" width="81.97" height="15" transform="translate(191.52 176.52) rotate(90)"/>
+  <rect class="cls-2" x="354.35" y="210" width="495.65" height="15" transform="translate(1204.35 435) rotate(180)"/>
+  <rect class="cls-2" x="801.52" y="176.52" width="81.97" height="15" transform="translate(1026.52 -658.48) rotate(90)"/>
+</svg>

@@ -6,7 +6,10 @@
 @font-face {
     font-family: 'Monorama';
     font-weight: 300;
-    src: url(/monorama/Monorama-Regular.woff);
+    src: url(/monorama/Monorama-Regular.woff2) format("woff2"),
+         url(/monorama/Monorama-Regular.woff) format("woff"),
+         url(/monorama/Monorama-Regular.ttf) format("ttf")
+         url(/monorama/Monorama-Regular.eot) format("eot");
 }
 
 @font-face {
@@ -24,8 +27,10 @@
 @font-face {
     font-family: 'Monorama';
     font-weight: 900;
-    src: url(/monorama/Monorama-Bold.woff2);
-}
+    src: url(/monorama/Monorama-Bold.woff2) format("woff2"),
+         url(/monorama/Monorama-Bold.woff) format("woff"),
+         url(/monorama/Monorama-Bold.ttf) format("ttf")
+         url(/monorama/Monorama-Bold.eot) format("eot");}
 
 .monorama {
     font-family: 'Monorama';

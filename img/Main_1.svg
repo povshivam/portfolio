@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 210">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #e6e6e6;
+      }
+
+      .cls-1, .cls-4 {
+        font-family: VoxRoundWideW01-Semibold, VoxRoundWideW01-Semibold;
+        font-size: 138.54px;
+        font-weight: 600;
+      }
+
+      .cls-3, .cls-5 {
+        font-family: Calibri, Calibri;
+        font-size: 179.84px;
+      }
+
+      .cls-5, .cls-4, .cls-6 {
+        fill: #af5426;
+      }
+
+      .cls-7 {
+        fill: #af5526;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(-5.26 155.45)"><tspan x="0" y="0">&lt;</tspan></text>
+  <text class="cls-5" transform="translate(355.26 155.45) rotate(-180) scale(1 -1)"><tspan x="0" y="0">&lt;</tspan></text>
+  <text class="cls-1" transform="translate(78.31 157.28)"><tspan x="0" y="0">P</tspan></text>
+  <text class="cls-4" transform="translate(169.73 157.28)"><tspan x="0" y="0">S</tspan></text>
+  <g>
+    <rect class="cls-7" x="53.78" width="62.34" height="10.39"/>
+    <rect class="cls-7" x="34.73" y="19.05" width="48.49" height="10.39" transform="translate(34.73 83.22) rotate(-90)"/>
+  </g>
+  <g>
+    <rect class="cls-2" x="233.88" y="0" width="62.34" height="10.39" transform="translate(530.1 10.39) rotate(-180)"/>
+    <rect class="cls-2" x="266.78" y="19.05" width="48.49" height="10.39" transform="translate(266.78 315.27) rotate(-90)"/>
+  </g>
+  <g>
+    <rect class="cls-6" x="53.78" y="199.61" width="62.34" height="10.39"/>
+    <rect class="cls-6" x="34.73" y="180.56" width="48.49" height="10.39" transform="translate(244.73 126.78) rotate(90)"/>
+  </g>
+  <g>
+    <rect class="cls-2" x="233.88" y="199.61" width="62.34" height="10.39" transform="translate(530.1 409.61) rotate(180)"/>
+    <rect class="cls-2" x="266.78" y="180.56" width="48.49" height="10.39" transform="translate(476.78 -105.27) rotate(90)"/>
+  </g>
+</svg>
